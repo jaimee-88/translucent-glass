@@ -12,18 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class Main implements ClientModInitializer {
 
-    public static String ID = "translucent-glass";
-
     @Override
     public void onInitializeClient() {
-        FabricLoader.getInstance().getModContainer(ID).ifPresent(container -> {
-            ResourceManagerHelper.registerBuiltinResourcePack(asId("translucent-glass"), container, Text.literal("Translucent Glass"), ResourcePackActivationType.NORMAL);
+        FabricLoader.getInstance().getModContainer("translucent-glass").ifPresent(container -> {
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("translucent-glass", "translucent-glass"), container, Text.literal("Translucent Glass"), ResourcePackActivationType.NORMAL);
         });
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS_PANE, RenderLayer.getTranslucent());
-    }
-
-    public static Identifier asId(String path) {
-        return new Identifier(ID, path);
     }
 }
