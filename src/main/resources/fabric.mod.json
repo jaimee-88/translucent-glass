@@ -11,7 +11,7 @@
 		"sources": "https://github.com/JustinTimeCuber/translucent-glass"
 	},
 	"license": "GPL-3.0-only",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/translucent-glass/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"client": [

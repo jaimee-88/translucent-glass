@@ -1,9 +1,8 @@
-# Fabric Example Mod
+# Translucent Glass Mod
 
-## Setup
+by JustinTimeCuber
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+This mod does two things:
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+- Allows glass and glass panes to be rendered using translucent textures. Attempting to do this using only a resource pack does not work because translucent blocks are rendered during a separate stage.
+- Provides a built-in resource pack which reduces the opacity of glass and glass panes.
