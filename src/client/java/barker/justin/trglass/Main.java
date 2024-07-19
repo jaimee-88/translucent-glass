@@ -15,7 +15,7 @@ public class Main implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         FabricLoader.getInstance().getModContainer("translucent-glass").ifPresent(container -> {
-            System.out.println(ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("translucent-glass", "translucent-glass"), container, Text.literal("Translucent Glass"), ResourcePackActivationType.DEFAULT_ENABLED));
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("translucent-glass", "translucent-glass"), container, Text.literal("Translucent Glass"), ResourcePackActivationType.DEFAULT_ENABLED);
         });
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS_PANE, RenderLayer.getTranslucent());
