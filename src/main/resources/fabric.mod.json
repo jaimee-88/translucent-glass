@@ -27,5 +27,7 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
+		"continuity": "*",
+		"mo_glass": ">=1.10"
 	}
 }
