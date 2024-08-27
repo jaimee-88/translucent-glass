@@ -19,5 +19,6 @@ public class Main implements ClientModInitializer {
         });
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GLASS_PANE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.BEACON, RenderLayer.getTranslucent());
     }
 }
