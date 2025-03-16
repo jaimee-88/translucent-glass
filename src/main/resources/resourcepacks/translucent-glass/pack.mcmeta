@@ -1,7 +1,10 @@
 {
     "pack": {
-        "pack_format": 15,
-        "supported_formats": [15,34],
-        "description": "Enables translucent glass"
+        "pack_format": 34,
+        "description": "Enables translucent glass",
+        "supported_formats": { 
+            "min_inclusive": 34,
+            "max_inclusive": 46
+        }
     }
 }
